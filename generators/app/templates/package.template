@@ -1,0 +1,19 @@
+{
+  "name": <%- projectName %>,
+  "version": "1.0.0",
+  "private": true,
+  "description": <%- projectDescription %>,
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.1"
+  },  
+  "scripts": {
+    <%- projectScripts %>
+  },
+  "dependencies": {
+    <%- projectDependencies %>
+  },
+  "devDependencies": {
+    <%- projectDevDependencies %>
+  }
+}
