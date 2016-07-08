@@ -1,10 +1,10 @@
-# generator-iservices
+# generator-future-state
 
 This package is currently in **BETA**
 
 ## Overview
 This package is a generator used with the [Yeoman](http://yeoman.io/) application.  
-It can be used to generate different kinds of iServices projects as well as different types of files after a project has been created.
+It can be used to generate different kinds of future state projects as well as different types of files after a project has been created.
 
 ## Guide
 
@@ -19,16 +19,16 @@ After you have Yeoman installed you will need to install this package that will 
 To install this package run the following from a terminal.
 
 ```
-npm install -g generator-iservices
+npm install -g generator-future-state
 ```
 
-Now that everything has been installed you are ready to create a new iServices project.
+Now that everything has been installed you are ready to create a new future state project.
 The first thing you need to do is create an empty folder that will contain your new project.
 From within this newly created folder run the following to start the script that will
 walk you through creating a new project.
 
 ```
-yo iservices
+yo future-state
 ```
 
 The script will ask you for a name and description to give your project.

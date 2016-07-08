@@ -7,7 +7,7 @@ module.exports = generators.Base.extend({
 
   // introduction prompt
   initializing: function () {
-    this.log('This utility will walk you through setting up an iservices project in');
+    this.log('This utility will walk you through setting up a future state project in');
     this.log(this.destinationRoot());
     this.log('Press ^C at any time to quit.');
     this.log('');
