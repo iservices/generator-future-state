@@ -46,7 +46,7 @@ that will provide api type interfaces.
 - `custom` - This option lets you pick and choose the components to include in your project.  A list of the 
 components and their descriptions appears futher on in this document.
 
-After you have chosen the type of project you can optionally include [Express](https://www.npmjs.com/package/express) and [Flux](https://www.npmjs.com/package/flux-angular2) packages which when selected will
+After you have chosen the type of project you can optionally include [express](https://www.npmjs.com/package/express) and [reng](https://www.npmjs.com/package/reng) packages which when selected will
 create a number of additional code files.  See the Flux/Express Structure section for more details.
 
 Additionaly you can choose to include [Bootstrap](http://getbootstrap.com/) and [FontAwesome](https://fortawesome.github.io/Font-Awesome/) libraries with your project if you
@@ -92,10 +92,10 @@ to serve up flux-angular2 apps.  In addition the index.js that is created will s
 multiple processes.
 
 There will also be an example app included in the project which can be found in the src/apps/example/ folder.  This is
-the example app that is used in the [flux-angular2](https://www.npmjs.com/package/flux-angular2) documentation and can be used to get up and running with the server
+the example app that is used in the [reng](https://www.npmjs.com/package/reng) documentation and can be used to get up and running with the server
 right away.
 
-Lastly a package.js file is created in the src/apps/ folder which instructs build process to include the flux-angular2 package
+Lastly a package.js file is created in the src/apps/ folder which instructs build process to include the reng package
 with all apps as a dependency.
 
 After the project has been created you can start up the server using the following terminal command:
@@ -144,16 +144,3 @@ This component can be executed individually with the `npm test` terminal command
 - `transform` - Transforms ECMAScript 6/7 compliant javascript code to ECMAScript 5 compliant javascript code using the [build-transform](https://www.npmjs.com/package/build-transform) package.
 All files with an extension of .js found in the src/ folder or any sub folder excluding src/styles and src/public will be transformed and output to the lib/ folder
 This component can be executed individually with the `npm run transform` terminal command or it will be executed as part of the `npm run build` terminal command.
-
-## Guide (Flux)
-
-There are a number of sub generators that can be used to create various classes that implement different objects in the Flux pattern.  The classes created
-make use of the [flux-angular2](https://www.npmjs.com/package/flux-angular2) package in their implementations so this package will need to be installed to use these sub generators.
-
-Run any of the following terminal commands within the folder you want to create a new class in.
-
-- `yo iservices:flux-reducer` - Create a new class that inherits the Reducer class.
-- `yo iservices:flux-view` - Create a new class that inherits the View class.
-
-
-
