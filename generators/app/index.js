@@ -205,7 +205,7 @@ module.exports = generators.Base.extend({
           values.projectDependencies.push('"build-bundle": "^2.0.0"');
           values.projectDevDependencies.push('"browser-sync": "^2.12.8"');
           values.projectScripts.push('"bundle": "build-bundle lib/apps -o dist -m"');
-          values.projectScripts.push('"bundle-apps": "build-bundle lib/apps -o dist -m -e apps"');
+          values.projectScripts.push('"bundle-apps": "build-bundle lib/apps -o dist -m -e app"');
           buildScripts.push('npm run bundle');
           buildAppsScripts.push('npm run bundle-apps');
           watchScripts.push('npm run bundle');
