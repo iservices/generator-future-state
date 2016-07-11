@@ -1,6 +1,6 @@
 {
   "name": "generator-future-state",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A yeoman generator for future state apps.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

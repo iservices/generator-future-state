@@ -20,9 +20,9 @@ Reng.Page.setConfig({
       // regex example of a mocked call to either http://google.com or https://google.com
       '/GET:https?://google.com/': () => {
         console.log('** GOOGLE **');
-        return {
+        return Promise.resolve({
           text: 'OK'
-        };
+        });
       }
 
     }
