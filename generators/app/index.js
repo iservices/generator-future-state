@@ -231,8 +231,8 @@ module.exports = generators.Base.extend({
       values.projectScripts.push('"watch": "npm run watch-win32 -s || npm run watch-nix -s"');
 
       if (values.includeBrowserSync) {
-        values.projectScripts.push('"watch-start": "nodemon . -w ./lib"');
-        values.projectScripts.push('"watch-browser-win32": "start \\b npm run watch-start & start \\b npm run watch -s & start \\b browser-sync start -p localhost:3000 --port 3001 -f \\"dist/**/*\\""');
+        values.projectScripts.push('"watch-start": "nodemon -w ./lib -w ./dist -e \\"*.*\\"');
+        values.projectScripts.push('"watch-browser-win32": "start \\b npm run watch-start & start \\b npm run watch -s & start \\b browser-sync start -p localhost:3000 --port 3001 -f server.log"');
         values.projectScripts.push('"watch-browser-nix": "npm run watch-start & npm run watch -s & browser-sync start -p localhost:3000 --port 3001 -f server.log"');
         values.projectScripts.push('"watch-browser": "npm run watch-browser-win32 -s || npm run watch-browser-nix -s"');
       }
