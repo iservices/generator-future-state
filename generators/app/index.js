@@ -226,13 +226,13 @@ module.exports = generators.Base.extend({
       values.projectScripts.push('"run-apps": "npm run build-apps && npm start"');
     }
     if (watchScripts.length) {
-      values.projectScripts.push('"watch-win32": "start ' + watchScripts.join(' -s -- -w & start ') + ' -s -- -w"');
+      values.projectScripts.push('"watch-win32": "start \\b ' + watchScripts.join(' -s -- -w & start \\b ') + ' -s -- -w"');
       values.projectScripts.push('"watch-nix": "' + watchScripts.join(' -s -- -w & ') + ' -s -- -w"');
       values.projectScripts.push('"watch": "npm run watch-win32 -s || npm run watch-nix -s"');
 
       if (values.includeBrowserSync) {
         values.projectScripts.push('"watch-start": "nodemon . -w ./lib"');
-        values.projectScripts.push('"watch-browser-win32": "start npm run watch-start & start npm run watch -s & start browser-sync start -p localhost:3000 --port 3001 -f \\"dist/**/*\\""');
+        values.projectScripts.push('"watch-browser-win32": "start \\b npm run watch-start & start \\b npm run watch -s & start \\b browser-sync start -p localhost:3000 --port 3001 -f \\"dist/**/*\\""');
         values.projectScripts.push('"watch-browser-nix": "npm run watch-start & npm run watch -s & browser-sync start -p localhost:3000 --port 3001 -f server.log"');
         values.projectScripts.push('"watch-browser": "npm run watch-browser-win32 -s || npm run watch-browser-nix -s"');
       }

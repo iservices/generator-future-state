@@ -5,7 +5,7 @@
 
 /* eslint no-console: 0 */
 
-import Reng from 'redux';
+import Reng from 'reng';
 
 Reng.Page.setConfig({
 
